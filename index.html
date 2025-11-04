@@ -72,24 +72,28 @@
       </div>
 
       <h4 style="margin-top:14px">Solicitudes recibidas</h4>
-      <ul id="inboxList" class="list-plain">
-        <!-- items dinámicos -->
-      </ul>
+      <ul id="inboxList" class="list-plain"></ul>
 
       <h4 style="margin-top:14px">Tu lista de amigos</h4>
-      <ul id="friendsList" class="list-plain">
-        <!-- items dinámicos -->
-      </ul>
+      <ul id="friendsList" class="list-plain"></ul>
 
       <h4 style="margin-top:14px">Amigos en línea</h4>
       <div id="onlineFriendsWrap" class="online-panel">
-        <ul id="onlineFriendsList" class="online-list">
-          <!-- chips dinámicos -->
-        </ul>
+        <ul id="onlineFriendsList" class="online-list"></ul>
       </div>
 
+      <!-- 🔹 Matchmaking -->
+      <h3 style="margin-top:24px">Matchmaking</h3>
+      <div class="row">
+        <button id="btnFindMatch">Buscar partida</button>
+        <button id="btnCancelMatch" class="secondary">Cancelar</button>
+      </div>
+      <p id="mmStatus" class="msg"></p>
     </div>
   </section>
+
+  <!-- Contenedor de notificaciones (toasts) -->
+  <div id="toastContainer" class="toast-container"></div>
 
   <script type="module" src="firebase.js"></script>
   <script type="module" src="app.js"></script>
