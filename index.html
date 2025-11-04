@@ -63,25 +63,30 @@
         <tbody id="tblBody"></tbody>
       </table>
       <p id="listMsg" class="msg"></p>
+
       <!-- Amigos -->
-<h3 style="margin-top:24px">Amigos</h3>
-<div class="row">
-  <input id="friendEmailInput" placeholder="Correo del amigo (registrado)"/>
-  <button id="sendFriendReqBtn">Enviar solicitud</button>
-</div>
+      <h3 style="margin-top:24px">Amigos</h3>
+      <div class="row">
+        <input id="friendEmailInput" placeholder="Correo del amigo (registrado)"/>
+        <button id="sendFriendReqBtn">Enviar solicitud</button>
+      </div>
 
-<h4 style="margin-top:14px">Solicitudes recibidas</h4>
-<ul id="inboxList" style="list-style:none; padding-left:0; display:flex; flex-direction:column; gap:8px;">
-  <!-- items dinámicos -->
-</ul>
+      <h4 style="margin-top:14px">Solicitudes recibidas</h4>
+      <ul id="inboxList" class="list-plain">
+        <!-- items dinámicos -->
+      </ul>
 
-<h4 style="margin-top:14px">Tu lista de amigos</h4>
-<ul id="friendsList" style="list-style:none; padding-left:0; display:flex; flex-direction:column; gap:6px;">
-  <!-- items dinámicos -->
-</ul>
+      <h4 style="margin-top:14px">Tu lista de amigos</h4>
+      <ul id="friendsList" class="list-plain">
+        <!-- items dinámicos -->
+      </ul>
 
-      
-      
+      <h4 style="margin-top:14px">Amigos en línea</h4>
+      <div id="onlineFriendsWrap" class="online-panel">
+        <ul id="onlineFriendsList" class="online-list">
+          <!-- chips dinámicos -->
+        </ul>
+      </div>
 
     </div>
   </section>
@@ -89,6 +94,5 @@
   <script type="module" src="firebase.js"></script>
   <script type="module" src="app.js"></script>
   <script src="game.js"></script>
-
 </body>
 </html>
