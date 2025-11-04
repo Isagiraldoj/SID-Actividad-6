@@ -3,13 +3,14 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-aut
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBPj_AFAJTnl0_ffTNz3x6WeOPZcojAIcY",
-  authDomain: "pruebasid-isabelagiraldo.firebaseapp.com",
-  databaseURL: "https://pruebasid-isabelagiraldo-default-rtdb.firebaseio.com",
-  projectId: "pruebasid-isabelagiraldo",
-  storageBucket: "pruebasid-isabelagiraldo.firebasestorage.app",
-  messagingSenderId: "190894139049",
-  appId: "1:190894139049:web:b402e288416c691e216bb8"
+  apiKey: "AIzaSyAvzR3ydXxeccIL-zpDKMQXUowt1AjHoUA",
+  authDomain: "actividad-6-matchmaking.firebaseapp.com",
+  databaseURL: "https://actividad-6-matchmaking-default-rtdb.firebaseio.com",
+  projectId: "actividad-6-matchmaking",
+  storageBucket: "actividad-6-matchmaking.firebasestorage.app",
+  messagingSenderId: "279533926177",
+  appId: "1:279533926177:web:5f3b0be01ca06bad02b060",
+  measurementId: "G-FGJ66Z2C47"
 };
 
 export const app = initializeApp(firebaseConfig);
