@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actividad 5 – Isabela Giraldo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Actividad 5 – Isabela Giraldo</h1>
+    <p class="byline">Firebase Serverless App</p>
+  </header>
+
+  <!-- Login / Registro -->
+  <div id="loginContainer" class="login-container">
+    <form id="authForm">
+      <input placeholder="Correo electrónico" id="usernameInput" autocomplete="username" />
+      <input placeholder="Contraseña (mínimo 6)" id="passwordInput" type="password" autocomplete="current-password" />
+      <div class="row">
+        <button id="loginButton">Ingresar</button>
+        <button id="registerButton" type="button" class="secondary">Registrarse</button>
+      </div>
+      <button id="resetPwdButton" type="button" class="linklike">¿Olvidaste tu contraseña?</button>
+      <p id="authMsg" class="msg"></p>
+      <div id="authAlert"></div>
+    </form>
+  </div>
+
+  <!-- App -->
+  <section id="appSection" class="card hidden">
+    <div class="row space">
+      <h2 id="welcome">Hola, </h2>
+      <button id="logoutButton" class="danger">Cerrar sesión</button>
+    </div>
+
+    <!-- Juego + Leaderboard -->
+    <div class="game-card">
+      <h3>Minijuego Catcher + Leaderboard</h3>
+
+      <div class="game-wrap">
+        <canvas id="gameCanvas"></canvas>
+      </div>
+
+      <div class="hud">
+        <div><b>Tiempo:</b> <span id="hudTime">0.0</span>s</div>
+        <div><b>Puntaje:</b> <span id="hudScore">0</span></div>
+      </div>
+
+      <div class="row gap" style="margin-top:10px">
+        <button id="btnStart">Iniciar juego</button>
+      </div>
+
+      <p class="msg">Usa las flechas ← y → para atrapar los círculos. Tienes 15 segundos.</p>
+      <p id="updateMsg" class="msg"></p>
+
+      <h3>Tabla de Puntajes</h3>
+      <div class="row space">
+        <button id="btnRefresh">Refrescar</button>
+      </div>
+      <table class="table">
+        <thead><tr><th>#</th><th>Usuario</th><th>Puntaje</th></tr></thead>
+        <tbody id="tblBody"></tbody>
+      </table>
+      <p id="listMsg" class="msg"></p>
+    </div>
+  </section>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="app.js"></script>
+  <script src="game.js"></script>
+
+</body>
+</html>

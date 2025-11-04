@@ -1,0 +1,90 @@
+:root {
+  --bg: #f7f9fb;
+  --text: #1a1a1a;
+  --accent: #0077cc;
+  --danger: #d62828;
+  --muted: #5f6c7b;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+.header { text-align: center; padding: 24px 10px; }
+.header h1 { margin: 0; font-size: 1.8rem; }
+.byline { color: var(--muted); }
+
+/* Containers */
+.card, form {
+  background: white;
+  border: 1px solid #d9e1e8;
+  border-radius: 10px;
+  padding: 20px;
+  width: min(600px, 94vw);
+  margin: 20px auto;
+}
+.hidden { display: none; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+button:hover { background: #005fa3; }
+.secondary { background: #ccc; color: #222; }
+.danger { background: var(--danger); }
+
+/* Layout helpers */
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.space { justify-content: space-between; width: 100%; }
+.gap { gap: 12px; }
+
+.linklike {
+  background: transparent; border: none; color: var(--accent);
+  cursor: pointer; text-decoration: underline; padding: 4px 0;
+}
+.msg { margin-top: 6px; min-height: 1em; }
+
+.alert {
+  padding: 10px; border-radius: 6px; margin-top: 10px;
+}
+.alert--error { background: #ffe5e5; color: #a11; }
+.alert--success { background: #e6f6e6; color: #175; }
+
+/* Game */
+.game-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #eef3f8;
+  overflow: hidden;
+}
+#gameCanvas { width: 100%; height: 100%; display: block; }
+
+.hud {
+  margin-top: 10px;
+  display: flex; gap: 12px;
+  font-size: 14px;
+  background: #f0f4f8;
+  border: 1px solid #d9e1e8;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+.table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 8px; border-bottom: 1px solid #ddd; text-align: left; }
